@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAzulReal"
+    tools:context="edu.tecii.android.practica5.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamañoLetra"
+        android:textColor="@color/colorBlanco"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Title"
+        android:text="Ingresa los grados centigrados a convertir: "
+        />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamañoExt"
+        android:background="@color/colorAzul"
+        android:textAlignment="center"
+        android:textSize="@dimen/tamañoLetra"
+        android:textColor="@color/colorBlanco"
+        android:layout_below="@+id/txt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAzulP"
+        android:textAlignment="center"
+        android:textSize="@dimen/tamañoLetra"
+        android:textColor="@color/colorBlanco"
+        android:layout_below="@id/edt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/tamañoMargen"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="@dimen/tamañoMargen"
+        android:text="farenheit"
+        android:onClick="convetFar"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:text="kelvin"
+        android:onClick="convetKelv"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btn2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Ranking"
+        android:onClick="convetRank"
+        />
+
+
+</RelativeLayout>
